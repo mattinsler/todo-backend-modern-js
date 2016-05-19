@@ -1,0 +1,27 @@
+{
+  "name": "todo-backend",
+  "version": "1.0.0",
+  "description": "An implementation of Todo-Backend using modern Javascript features",
+  "author": "Matt Insler <matt.insler@gmail.com>",
+  "repository": "mattinsler/todo-backend-modern-js",
+  "engines": {
+    "node": "5.x.x",
+    "npm": "3.x.x"
+  },
+  "scripts": {
+    "start": "app-context start"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@mattinsler/garnish": "0.0.4",
+    "app-context": "0.3.1",
+    "app-context-access-mongo": "0.0.2",
+    "app-context-connie": "1.1.0",
+    "app-context-express": "1.1.0",
+    "babel-plugin-transform-decorators-legacy": "1.3.4",
+    "babel-preset-es2015": "6.9.0",
+    "babel-preset-stage-0": "6.5.0",
+    "cors": "2.7.1",
+    "routers": "0.1.4"
+  }
+}
