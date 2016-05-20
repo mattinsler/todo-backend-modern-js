@@ -11,7 +11,9 @@ advantage of ES6/7 features.
 This codebase uses [app-context](http://app-contextjs.com/) to boot and initialize the application.
 This is managed by the `app-context.js` file. It uses a few community-based initializers to read
 and environment-specific config file, connects to the MongoDB endpoint in the configuration, and then
-creates and starts an [express](http://expressjs.com/) server.
+creates and starts an [express](http://expressjs.com/) server. You might notice that [babel](http://babeljs.io/)
+is being used in this project but never referenced explicitly. This is because `app-context` will
+recognize the `.babelrc` file and automatically load babel into your project.
 
 The [express initializer](https://www.npmjs.com/package/app-context-express) will create a new server
 and add a default set of middleware to it (check the docs), then it will pass the server to the `router.js`
